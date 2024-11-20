@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF8AB3AF2CEDC76200384CC2 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = BF8AB3AE2CEDC76200384CC2 /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		BF8AB3A12CEDAA5100384CC2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8AB3AF2CEDC76200384CC2 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = TextParser;
 			packageProductDependencies = (
+				BF8AB3AE2CEDC76200384CC2 /* ArgumentParser */,
 			);
 			productName = TextParser;
 			productReference = BF8AB3A32CEDAA5100384CC2 /* TextParser */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = BF8AB39A2CEDAA5100384CC2;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BF8AB3AD2CEDC76200384CC2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BF8AB3A42CEDAA5100384CC2 /* Products */;
 			projectDirPath = "";
@@ -289,6 +298,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF8AB3AD2CEDC76200384CC2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF8AB3AE2CEDC76200384CC2 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF8AB3AD2CEDC76200384CC2 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF8AB39B2CEDAA5100384CC2 /* Project object */;
 }
